@@ -1,0 +1,29 @@
+
+.yourmenu{
+	font-size: 20px;
+	padding: 20px;
+}
+.allitems{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.item{
+	border: 2px solid black;
+	width: 30vw;
+	padding: 12px 0px 10px 10px;
+	margin-bottom: 8px;
+	margin-right: 5px;
+	margin-left: 2px;
+	display: flex;
+	flex-direction: column;
+}
+.itembutton{
+	margin: 8px 8px 5px 8px;
+	width: 100px;
+	font-size: 12px;
+	background-color: #c3d8f4;
+	color: black;
+	font-weight: 400;
+	cursor: pointer;
+}
