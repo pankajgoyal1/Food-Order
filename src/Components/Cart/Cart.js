@@ -10,7 +10,7 @@ class Cart extends React.Component{
 		}
 	}
 	render(){
-		console.log(this.props.selecteditems.length);
+		//console.log(this.props.selecteditems.length);
 		total=0;
 		return(
 			<div className="cart">
@@ -37,6 +37,7 @@ class Cart extends React.Component{
 												<span>{this.props.veg[i].name } <br />      
 												Price: Rs.{this.props.veg[i].price}
 												</span>
+												<button className="itembutton" onClick={this.props.removeitem} value={this.props.veg[i].id}>Remove</button>
 											</div>
 											);
 									}
@@ -52,6 +53,7 @@ class Cart extends React.Component{
 												<span> {this.props.nonveg[i].name} <br />
 												Price: Rs. {this.props.nonveg[i].price}
 												</span>
+												<button className="itembutton" onClick={this.props.removeitem} value={this.props.nonveg[i].id} >Remove</button>
 											</div>
 											);
 									}
@@ -68,7 +70,7 @@ class Cart extends React.Component{
 				}
 				<div className="total">
 							<span>Order total is Rs. {total}</span>
-						</div>
+				</div>
 			</div>
 			);
 	}
