@@ -13,7 +13,7 @@ class App extends React.Component{
     }
   }
   componentDidMount(){
-    fetch('http://demo0764762.mockable.io/food')
+    fetch('https://demo0764762.mockable.io/food')
     .then(response=>response.json())
     .then(data=>{
       this.setState({veg:data.veg,nonveg:data.nonveg})
