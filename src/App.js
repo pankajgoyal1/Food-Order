@@ -17,7 +17,6 @@ class App extends React.Component{
     .then(response=>response.json())
     .then(data=>{
       this.setState({veg:data.veg,nonveg:data.nonveg})
-    .catch(err=>console.log(err))
     })
   }
   onAddition = (event)=>{

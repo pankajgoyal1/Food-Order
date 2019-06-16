@@ -24,7 +24,7 @@ class Menu extends React.Component{
 								<div className="item" key ={i} >
 									<span>{item.name}</span>
 									<span>Rs. {item.price}</span>
-									<button className="itembutton" onClick={this.props.addToCart} value={item.id} >Add To Cart</button>
+									<button className="itembutton" onClick={this.props.addToCart} value={item.id} >Add</button>
 								</div>
 								);
 						})
@@ -41,7 +41,7 @@ class Menu extends React.Component{
 								<div className="item" key ={i} >
 									<span>{item.name}</span>
 									<span>Rs. {item.price}</span>
-									<button className="itembutton" onClick={this.props.addToCart} value={item.id} >Add To Cart</button>
+									<button className="itembutton" onClick={this.props.addToCart} value={item.id} >Add</button>
 								</div>
 								);
 						})
