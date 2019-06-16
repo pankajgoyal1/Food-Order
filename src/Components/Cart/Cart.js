@@ -17,6 +17,7 @@ class Cart extends React.Component{
 				<div className="yourcart" >
 					Your Cart
 				</div>
+				<div>
 				{
 					
 
@@ -33,7 +34,7 @@ class Cart extends React.Component{
 									{
 										total=total+this.props.veg[i].price;
 										return(
-											<div className="addedcartitem" key={this.props.veg[i].id}>
+											<div className="addedcartitem" key={i}>
 												<span>{this.props.veg[i].name } <br />      
 												Price: Rs.{this.props.veg[i].price}
 												</span>
@@ -42,7 +43,7 @@ class Cart extends React.Component{
 											);
 									}
 								}
-								for(var i in this.props.nonveg)
+								for( i in this.props.nonveg)
 								{
 									//console.log(i);
 									if(this.props.nonveg[i].id === item)
@@ -59,15 +60,16 @@ class Cart extends React.Component{
 									}
 								}
 
-								
+								return <div />;
 							})
 						}
 						<br />
 						
 						</div>
 					:
-					<div className="">Your Cart is empty</div>
+					<div className="">Your Cart is empty. </div>
 				}
+				</div>
 				<div className="total">
 							<span>Order total is Rs. {total}</span>
 				</div>
